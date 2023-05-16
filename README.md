@@ -9,9 +9,6 @@
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Project Status](#project-status)
-- [Room for Improvement](#room-for-improvement)
-- [Contact](#contact)
 
 ## General Information
 
@@ -36,4 +33,4 @@ List the ready features here:
 
 ## Screenshots
 
-<img src="assets/sreenshot.png" alt="screenshot">
+![screenshot](https://github.com/f3hint0la/javascript-weather-app/assets/102443135/15d36d8b-2f19-4b28-9974-3e3780d7a57c)
