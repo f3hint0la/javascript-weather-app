@@ -26,8 +26,11 @@ const fetchWeather = async (city) => {
     error.style.display = "flex";
     card.style.display = "none";
     return;
+  } else {
+    card.style.display = "flex";
+    error.style.display = "none";
   }
-  card.style.display = "flex";
+
   document.querySelector(".city").innerHTML =
     data.name + ", " + data.sys.country;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
