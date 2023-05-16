@@ -3,6 +3,8 @@ const searchBtn = document.querySelector(".search-button");
 const weatherImg = document.querySelector(".weather-img");
 const timeEl = document.getElementById("time");
 const dateEl = document.getElementById("date");
+const card = document.querySelector(".card");
+const error = document.querySelector(".error");
 
 const api = {
   key: "2b046d694c0134dc1ee772379a5e91ed",
@@ -19,8 +21,13 @@ const fetchWeather = async (city) => {
   );
 
   const data = await response.json();
-  console.log(data);
 
+  if (data.cod === "404") {
+    error.style.display = "flex";
+    card.style.display = "none";
+    return;
+  }
+  card.style.display = "flex";
   document.querySelector(".city").innerHTML =
     data.name + ", " + data.sys.country;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";

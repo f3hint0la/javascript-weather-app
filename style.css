@@ -11,11 +11,6 @@
 body {
   min-height: 100vh;
   background-image: url("assets/background.jpg");
-  /* background: linear-gradient(
-    to bottom,
-    rgba(203, 63, 110, 0.961),
-    rgba(23, 16, 169, 0.567)
-  ); */
   background-size: cover;
   background-position: top center;
 }
@@ -40,7 +35,6 @@ header input {
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
-  /* text-transform: capitalize; */
   color: #eeeeee;
 }
 
@@ -86,10 +80,6 @@ header button {
   width: 50%;
 }
 
-/* .box {
-  margin-block: 10px;
-} */
-
 .box .city {
   font-size: 50px;
   font-weight: 900;
@@ -117,17 +107,6 @@ header button {
   font-size: 18px;
   font-weight: 400;
 }
-
-/* .content h1 {
-  font-size: 80px;
-  font-weight: 500;
-} */
-
-/* .content h2 {
-  font-size: 50px;
-  font-weight: 400;
-  margin-top: -8px;
-} */
 
 .details {
   width: 100%;
@@ -158,19 +137,26 @@ header button {
   font-weight: 700;
 }
 
-/* .col {
-  display: flex;
+.error {
+  display: none;
+  flex-direction: column;
   align-items: center;
-  text-align: left;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.col img {
-  width: 40px;
-  margin-right: 10px;
+.error h1 {
+  color: #6b6b6b;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.humidity,
-.wind {
-  font-size: 25px;
-  margin-top: -6px;
-} */
+.error img {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  .error img {
+    width: 40%;
+  }
+}
