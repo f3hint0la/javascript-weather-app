@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Elementicon</title>
+  </head>
+  <body>
+    <header>
+      <input
+        type="text"
+        class="search-box"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Search for a city"
+      />
+
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </header>
+
+    <div class="card">
+      <img class="weather-img" src="assets/mostlysunny.svg" alt="" />
+      <div class="box">
+        <p class="city"></p>
+        <p class="temp">0 <sup> °C</sup></p>
+        <p class="description"></p>
+        <p id="time">00:00
+          <p id="date">Wednesday, 3 May</p>
+        </p>
+      </div>
+
+      <div class="details">
+        <div class="humidity">
+          <i class="fa-sharp fa-solid fa-droplet"></i>
+          <div class="text">
+            <span id="humidity">68%</span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span id="wind">42 km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
