@@ -13,6 +13,7 @@ body {
   background-image: url("assets/weather.jpg");
   background-size: cover;
   background-position: top center;
+  overflow: hidden;
 }
 
 header {
