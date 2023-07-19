@@ -33,4 +33,4 @@ List the ready features here:
 
 ## Screenshots
 
-![screenshot](https://github.com/f3hint0la/javascript-weather-app/assets/102443135/15d36d8b-2f19-4b28-9974-3e3780d7a57c)
+![screenshot](assets/sreenshot.png)
